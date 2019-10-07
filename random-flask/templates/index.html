@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Guess</title>
+  </head>
+  <body>
+    <div style="text-align:center">
+      <h3>Welcome to the Great Number Game!</h3>
+        <h4>I'm thinking of a number between 1 and 100</h4>
+        <h4>Take a guess!</h4>
+        {%if number and guess %}
+            {%if guess > number %}
+            <div style="background-color: red">
+              <p>{{guess}} is too HIGH</p>
+              <form class="" action="/guess" method="post">
+                <input type="text" name="guess-number" value="">
+                <input type="submit" name="" value="Submit">
+              </form>
+            </div>
+            {%endif%}
+            {%if guess < number %}
+            <div style="background-color: red">
+              <p>{{guess}} is too LOW</p>
+            </div>
+            <form class="" action="/guess" method="post">
+              <input type="text" name="guess-number" value="">
+              <input type="submit" name="" value="Submit">
+            </form>
+            {%endif%}
+            {%if guess == number %}
+            <div style="background-color: green">
+              <p>{{guess}} is CORRECT!</p>
+              <form class="" action="/play-again" method="post">
+                <input type="submit" value="Play Again">
+              </form>
+            </div>
+            {%endif%}
+            {%else%}
+            <form class="" action="/guess" method="post">
+              <input type="text" name="guess-number" value="">
+              <input type="submit" name="" value="Submit">
+            </form>
+          {%endif%}
+
+    </div>
+  </body>
+</html>

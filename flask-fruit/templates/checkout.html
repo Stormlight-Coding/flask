@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your order</title>
+  </head>
+  <body>
+    <h2>Thank you for your order!</h2>
+    <h4>We ordered {{ total }} items for you and charged your student account today</h4>
+    <h4 style="text-decoration: underline">Your order:</h4>
+    <div style="width: 400px; height: 200px;">
+    <table border="1" style="float: left">
+        <th style="padding: 5px; background-color: gray">Fruit Name</th>
+        <th style="padding: 5px; background-color: gray">Quantity</th>
+            <tr>
+                <td style="padding: 5px">Strawberry</td>
+                <td style="text-align: center">
+                    {{ strawberries }}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5px; background-color: lightgray">Raspberry</td>
+                <td style="text-align: center; background-color: lightgray">
+                    {{ raspberries }}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Apple</td>
+                <td style="text-align: center">
+                    {{ apples }}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5px; background-color: lightgray">Banana</td>
+                <td style="text-align: center; background-color: lightgray">
+                    {{ bananas }}
+                </td>
+            </tr>
+    </table>
+    <div class="" style="float: right; border: solid; width: 200px; padding: 5px;">
+      <h4 style="text-decoration: underline">Your Information:</h4>
+      <p>Name: {{ name }}</p>
+      <p>Student Id: {{ id }}</p>
+    </div>
+    </div>
+    <a href="/">Go Back</a>
+  </body>
+</html>

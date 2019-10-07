@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Info:</h3>
+    <h4>Name: {{ name }}</h4>
+    <h6>Location: {{ location }}</h6>
+    <h6>Favorite Language: {{ language  }}</h6>
+    {%if comments %}
+    <h6>Comments: {{ comments }}</h6>
+    {%else%}
+    <h6>No comments submitted</h6>
+    {%endif%}
+    <a href='/'>Go Back</a>
+
+  </body>
+</html>

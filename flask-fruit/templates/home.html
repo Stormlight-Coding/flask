@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Buy Fruit</title>
+  </head>
+  <body>
+    <h2>Dojo Fruit Stand!</h2>
+        <h3 style="text-decoration: underline">What would you like to buy?</h3>
+        <form action="/checkout" method="post">
+            <table border="1">
+                <th style="padding: 5px">Fruit Name</th>
+                <th style="padding: 5px">Quantity</th>
+                    <tr>
+                        <td style="padding: 5px">Strawberry</td>
+                        <td>
+                            <select name="strawberries" style="text-align: center">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px">Raspberry</td>
+                        <td>
+                            <select name="raspberries" style="text-align: center">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px">Apple</td>
+                        <td>
+                            <select name="apples" style="text-align: center">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px">Banana</td>
+                        <td>
+                            <select name="bananas" style="text-align: center">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            <h3 style="text-decoration: underline">Your information</h3>
+            Name: <input type="text" name="name"><br>
+            Your Student Id: <input type="text" name="id"><br>
+            <input type="submit" name="">
+        </form>
+        <form class="" action="/show" method="post">
+          Test: <input type="text" name="test">
+          <input type="submit" name="" value="View">
+
+        </form>
+  </body>
+</html>

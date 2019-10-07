@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Form</title>
+  </head>
+  <body>
+    <div style="border: solid; width: 300px; padding-right: 20px">
+      <form  action="/users" method="post" style="padding:10px; margin-bottom: 25px;">
+        <div class="group" style="margin-bottom: 5px">
+          Your Name:
+            <input type="text" name="name" style="float:right"><br>
+        </div>
+        <div class="group" style="margin-bottom: 5px">
+          Dojo Location:
+            <select name="location" style="float:right">
+                <option value="San Jose">San Jose</option>
+                <option value="Texas">Texas</option>
+                <option value="San Bernadino">San Bernadino</option>
+                <option value="San Diego">San Deigo</option>
+                <option value="Seattle">Seattle</option>
+            </select>
+        </div>
+        <div class="group" style="margin-bottom: 5px">
+          Favorite Language:
+            <select name="language" style="float:right">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Swift">Swift</option>
+                <option value="MEAN">MEAN</option>
+                <option value="C#">C#</option>
+            </select>
+        </div>
+        <div class="group" style="margin-bottom: 5px">
+          Comment (optional):
+          <textarea name="comments" rows="5" cols="36"></textarea>
+        </div>
+        <button type="submit" style="float:right">Button</button>
+      </form>
+    </div>
+  </body>
+</html>

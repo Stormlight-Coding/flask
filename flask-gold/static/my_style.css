@@ -1,0 +1,21 @@
+.boxes {
+  border: black 1px;
+  border-style: solid;
+  text-align: center;
+  background-color: blue;
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  padding: 10px;
+}
+
+.info {
+  float: right;
+  margin-right: 100px;
+  border: black 3px;
+  border-style: solid;
+  width: 300px;
+  height: 200px;
+  overflow-y: scroll;
+  text-align: center;
+}
